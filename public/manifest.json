@@ -1,0 +1,25 @@
+{
+  "short_name": "TecnoPhone",
+  "name": "TecnoPhone",
+  "icons": [
+    {
+      "src": "https://res.cloudinary.com/dv4ukplcm/image/upload/v1685465327/smartphone/logo_ilnmsj.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://res.cloudinary.com/dv4ukplcm/image/upload/v1685465327/smartphone/logo_ilnmsj.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://res.cloudinary.com/dv4ukplcm/image/upload/v1685465327/smartphone/logo_ilnmsj.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#222222"
+}
