@@ -106,7 +106,7 @@ export const CartNameItem = styled.h3`
 export const CartMarcaItem = styled.p`
   font-size: 13px;
   text-align: start;
-  color: gray;
+  color: white;
   background: none;
 `;
 
@@ -118,7 +118,7 @@ export const CartPrice = styled.div`
   align-items: flex-start;
   font-size: 13px;
 
-  color: gray;
+  color: white;
 
 
 
@@ -191,7 +191,7 @@ export const CostInfo = styled.div`
   width: 100%;
 
   p {
-    color: gray;
+    color: white;
     background: none;
   }
   span {

@@ -76,6 +76,7 @@ export const Features = styled.div`
 
 export const ProductImage = styled.img`
   width: 90px;
+  height: 183px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,7 +106,7 @@ export const SpecsDescription = styled.div`
   p {
     font-size: 14px;
     text-align: start;
-    color: gray;
+    color: white;
   }
   
 `;

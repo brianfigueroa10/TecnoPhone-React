@@ -50,7 +50,7 @@ export const FormContainer = styled.form`
     }
     &:disabled {
       background: #373739;
-      color: gray;
+      color: white;
       cursor: not-allowed;
     }
   }
@@ -141,7 +141,7 @@ export const ContactButton = styled.button`
   }
   &&:disabled {
     background: black;
-    color: gray;
+    color: white;
     cursor: not-allowed;
     border: 2px solid #454545;
   }

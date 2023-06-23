@@ -31,7 +31,7 @@ const Recomendation = () => {
             <ProductImage src={img} alt={name} />
             <Features>
               <SpecsDescription style={{gap:'0'}}>
-                <p style={{ fontSize: '14px', textAlign: 'start', color: 'gray' }}>{marca}</p>
+                <p style={{ fontSize: '14px', textAlign: 'start', color: 'white' }}>{marca}</p>
                 <SpecsTitle>{name}</SpecsTitle>
               </SpecsDescription>
               <SpecsDescription>

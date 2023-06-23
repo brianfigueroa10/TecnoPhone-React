@@ -3,17 +3,17 @@
   "name": "TecnoPhone",
   "icons": [
     {
-      "src": "https://res.cloudinary.com/dv4ukplcm/image/upload/v1685465327/smartphone/logo_ilnmsj.png",
+      "src": "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477078/Phone/logo-fav_x0zlvt.webp",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "https://res.cloudinary.com/dv4ukplcm/image/upload/v1685465327/smartphone/logo_ilnmsj.png",
+      "src": "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477078/Phone/logo-fav_x0zlvt.webp",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "https://res.cloudinary.com/dv4ukplcm/image/upload/v1685465327/smartphone/logo_ilnmsj.png",
+      "src": "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477078/Phone/logo-fav_x0zlvt.webp",
       "type": "image/png",
       "sizes": "512x512"
     }

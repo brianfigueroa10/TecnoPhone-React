@@ -61,7 +61,7 @@ export const CheckoutCardSpecs = styled.div`
   justify-content: center;
   gap: 2px;
   background: none;
-  color: gray;
+  color: white;
   li {
     background: none;
   }

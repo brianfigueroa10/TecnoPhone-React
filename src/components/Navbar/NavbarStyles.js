@@ -68,6 +68,7 @@ export const LogoStyled = styled.div`
 
   & img {
     width: 120px;
+    height: 50px;
     color: skyblue;
     border-radius: 5px;
   }

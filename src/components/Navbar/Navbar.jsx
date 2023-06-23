@@ -40,7 +40,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <LogoStyled onClick={() => { handleCloseMenu(); navigate('/');  }}>
-          <img src="https://res.cloudinary.com/dv4ukplcm/image/upload/v1685466152/smartphone/logo_s3tbsw.png" alt="" />
+          <img src="https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477081/Phone/logo_jexqwj.webp" alt="" />
         </LogoStyled>
         <NavegationNavbar>
           
@@ -60,10 +60,34 @@ const Navbar = () => {
 
           {/* Navegación */}
           <LinkContainer open={isMenuOpen}>
-            <NavLink to="/" style={{ fontWeight: "800" }} onClick={handleToggleMenu}>Home</NavLink>
-            <NavLink to="/products" onClick={handleToggleMenu}>Productos</NavLink>
-            <NavLink to="/contact" onClick={handleToggleMenu}>Contacto</NavLink>
-            <ModalUser handleToggleMenu={handleToggleMenu} handleToggleCart={handleToggleCart} isCartOpen={isCartOpen} />
+            <li>
+              <div>
+                <NavLink to="/" style={{ fontWeight: "800" }} onClick={handleToggleMenu}>Home</NavLink>
+
+              </div>
+            </li>
+            <li>
+              <div>
+                <NavLink to="/products" onClick={handleToggleMenu}>Productos</NavLink>
+
+              </div>
+
+            </li>
+            <li>
+              <div>
+                <NavLink to="/contact" onClick={handleToggleMenu}>Contacto</NavLink>
+
+              </div>
+
+            </li>
+            <li>
+              <div>
+                <ModalUser handleToggleMenu={handleToggleMenu} handleToggleCart={handleToggleCart} isCartOpen={isCartOpen} />
+
+              </div>
+
+            </li>
+
           </LinkContainer>
           <CartModal isCartOpen={isCartOpen} handleClose={handleToggleCart}/>
         </NavegationNavbar>

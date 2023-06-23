@@ -6,7 +6,7 @@ export const productsData = [
         marca: "Samsung",
         category: "samsung",
         specs: ["Memoria: 512Gb.", "Ram: 12Gb.", "Camara Principal: 200Mp.", "Camara Frontal: 40Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684964698/smartphone/samsung/s23_ultra_green_frente_hk37xd.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477079/Phone/samsung/s23_ultra_icckbr.webp",
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ export const productsData = [
         marca: "Samsung",
         category: "samsung",
         specs: ["Memoria: 512Gb.", "Ram: 12Gb.", "Camara Principal: 80Mp.", "Camara Frontal: 12Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957539/smartphone/samsung/fold-4-green-frente_6_hzvu3t.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477078/Phone/samsung/fold-4_kwyckp.webp",
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ export const productsData = [
         marca: "Apple",
         category: "apple",
         specs: ["Memoria: 256Gb.", "Ram: 4Gb.", "Camara Principal: 16Mp.", "Camara Frontal: 12Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957559/smartphone/apple/iPhone_14_fhdbfn.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477081/Phone/apple/iPhone_14_an79nf.webp",
 
     },
     {
@@ -34,7 +34,7 @@ export const productsData = [
         marca: "Motorola",
         category: "motorola",
         specs: ["Memoria: 256Gb.", "Ram: 12Gb.", "Camara Principal: 200Mp.", "Camara Frontal: 60Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957534/smartphone/motorola/edge30ultra_engkal.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477080/Phone/motorola/edge30ultra_ffxrtq.webp",
     },
     {
         id: 5,
@@ -43,7 +43,7 @@ export const productsData = [
         marca: "Xiaomi",
         category: "xiaomi",
         specs:["Memoria: 256Gb.", "Ram: 8Gb.", "Camara Principal: 108Mp.", "Camara Frontal: 20Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957560/smartphone/xiaomi/redmiNote12_bx1zea.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477078/Phone/xiaomi/redmiNote12_dy5msf.webp",
     },
     {
         id: 6,
@@ -52,7 +52,7 @@ export const productsData = [
         marca: "Google",
         category: "google",
         specs: ["Memoria: 256Gb.", "Ram: 12Gb.", "Camara Principal: 112Mp.", "Camara Frontal: 12Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957535/smartphone/google/Google-Pixel-7-Pro_vannsb.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477080/Phone/google/Google-Pixel-7-Pro_xgnnpf.webp",
     },
     {
         id: 7,
@@ -61,7 +61,7 @@ export const productsData = [
         marca: "Google",
         category: "google",
         specs: ["Memoria: 256Gb.", "Ram: 12Gb.", "Camara Principal: 110Mp.", "Camara Frontal: 12Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957535/smartphone/google/Google-Pixel-6-Pro_xo4c9q.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477080/Phone/google/Google-Pixel-6-Pro_jgkvve.webp",
     },
     {
         id: 8,
@@ -70,7 +70,7 @@ export const productsData = [
         marca: "Apple",
         category: "apple",
         specs: ["Memoria: 128Gb.", "Ram: 4Gb.", "Camara Principal: 12Mp.", "Camara Frontal: 12Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957550/smartphone/apple/iPhone_13_edf9dg.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477081/Phone/apple/iPhone_13_Pro_cqguaq.webp",
     },
     {
         id: 9,
@@ -79,7 +79,7 @@ export const productsData = [
         marca: "Xiaomi",
         category: "xiaomi",
         specs: ["Memoria: 256Gb.", "Ram: 8Gb.", "Camara Principal: 108Mp.", "Camara Frontal: 16Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957547/smartphone/xiaomi/redmiNote11pro_es5bnl.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477078/Phone/xiaomi/redmiNote11pro_pry44f.webp",
     },
     {
         id: 10,
@@ -88,7 +88,7 @@ export const productsData = [
         marca: "Samsung",
         category: "samsung",
         specs: ["Memoria: 512Gb.", "Ram: 8Gb.", "Camara Principal: 72Mp.", "Camara Frontal: 10Mp.",],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957548/smartphone/samsung/s23plus_tmffrr.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477079/Phone/samsung/s23plus_tzrohd.webp",
     },
     {
         id: 11,
@@ -97,7 +97,7 @@ export const productsData = [
         marca: "Apple",
         category: "apple",
         specs: ["Memoria: 64Gb.", "Ram: 3Gb.", "Camara Principal: 12Mp.", "Camara Frontal: 7Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957552/smartphone/apple/iphone7_ypshsc.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477081/Phone/apple/iphone7_kurnvv.webp",
 
     },
     {
@@ -107,7 +107,7 @@ export const productsData = [
         marca: "Motorola",
         category: "motorola",
         specs: ["Memoria: 256Gb.", "Ram: 12Gb.", "Camara Principal: 64Mp.", "Camara Frontal: 32Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957535/smartphone/motorola/moto-fusion-blanco-frente_s3uu5u.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477080/Phone/motorola/moto-fusion_kjxf1y.webp",
     },
     {
         id: 13,
@@ -116,7 +116,7 @@ export const productsData = [
         marca: "Samsung",
         category: "samsung",
         specs: ["Memoria: 128Gb.", "Ram: 8Gb.", "Camara Principal: 72Mp.", "Camara Frontal: 10Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957539/smartphone/samsung/s22_qqunpx.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477079/Phone/samsung/s22_v7m6d6.webp",
     },
     {
         id: 14,
@@ -125,7 +125,7 @@ export const productsData = [
         marca: "Apple",
         category: "apple",
         specs: ["Memoria: 512Gb.", "Ram: 4Gb.", "Camara Principal: 16Mp.", "Camara Frontal: 12Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957552/smartphone/apple/iPhone_13_Pro_ohumde.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477081/Phone/apple/iPhone_13_y2rgax.webp",
     },
     {
         id: 15,
@@ -134,7 +134,7 @@ export const productsData = [
         marca: "Motorola",
         category: "motorola",
         specs: ["Memoria: 128Gb.", "Ram: 8Gb.", "Camara Principal: 64Mp.", "Camara Frontal: 32Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957534/smartphone/motorola/moto-edge30neo-black-frente_1_qvynr2.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477080/Phone/motorola/moto-edge30neo_cuep2z.webp",
     },
     {
         id: 16,
@@ -143,7 +143,7 @@ export const productsData = [
         marca: "Xiaomi",
         category: "xiaomi",
         specs: ["Memoria: 128Gb.", "Ram: 6Gb.", "Camara Principal: 64Mp.", "Camara Frontal: 16Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957547/smartphone/xiaomi/redmi-note-9-pro_hntppx.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477078/Phone/xiaomi/redmi-note-9-pro_l9bmyq.webp",
     },
     {
         id: 17,
@@ -152,7 +152,7 @@ export const productsData = [
         marca: "Huawei",
         category: "otros",
         specs: ["Memoria: 256Gb.", "Ram: 8Gb.", "Camara Principal: 80Mp.", "Camara Frontal: 13Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957539/smartphone/otros/huaweiMate40pro_sc0nw9.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477080/Phone/otros/huaweiMate40pro_akgeis.webp",
     },
     {
         id: 18,
@@ -161,7 +161,7 @@ export const productsData = [
         marca: "Motorola",
         category: "motorola",
         specs: ["Memoria: 128Gb.", "Ram: 6Gb.", "Camara Principal: 108Mp.", "Camara Frontal: 16Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957537/smartphone/motorola/motog72_kbpwjm.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477082/Phone/motorola/motog72_pxycvg.webp",
     },
     {
         id: 19,
@@ -170,7 +170,7 @@ export const productsData = [
         marca: "One Plus",
         category: "otros",
         specs: ["Memoria: 256Gb.", "Ram: 16Gb.", "Camara Principal: 50Mp.", "Camara Frontal: 16Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957548/smartphone/otros/oneplus10Pro_mgmffd.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477079/Phone/otros/oneplus10Pro_wsxcfj.webp",
     },
     {
         id: 20,
@@ -179,7 +179,7 @@ export const productsData = [
         marca: "Samsung",
         category: "samsung",
         specs: ["Memoria: 128Gb.", "Ram: 6Gb.", "Camara Principal: 48Mp.", "Camara Frontal: 32Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957548/smartphone/samsung/s21fe_uuazah.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477079/Phone/samsung/s21fe_jp4os0.webp",
     },
     {
         id: 21,
@@ -188,7 +188,7 @@ export const productsData = [
         marca: "Apple",
         category: "apple",
         specs: ["Memoria: 128Gb.", "Ram: 4Gb.", "Camara Principal: 12Mp.", "Camara Frontal: 12Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684962811/smartphone/apple/iPhone11rojo_ms53wz.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477081/Phone/apple/iPhone11rojo_b0fjgc.webp",
     },
     {
         id: 22,
@@ -197,7 +197,7 @@ export const productsData = [
         marca: "Xiaomi",
         category: "xiaomi",
         specs: ["Memoria: 256Gb.", "Ram:", "Camara Principal: 60Mp.", "Camara Frontal: 8Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957547/smartphone/xiaomi/redmi-note10_fi0x3k.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477078/Phone/xiaomi/redmi-note10_clqogn.webp",
     },
     {
         id: 23,
@@ -206,7 +206,7 @@ export const productsData = [
         marca: "Xiaomi",
         category: "xiaomi",
         specs: ["Memoria: 256Gb.", "Ram: 8Gb.", "Camara Principal: 108Mp.", "Camara Frontal: 20Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957541/smartphone/xiaomi/redmi-mi-11i_i0djfs.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477077/Phone/xiaomi/redmi-mi-11i_ijccyo.webp",
     },
     {
         id: 24,
@@ -215,7 +215,7 @@ export const productsData = [
         marca: "Nokia",
         category: "otros",
         specs: ["Memoria: 256Gb.", "Ram: 8Gb.", "Camara Principal: 50Mp.", "Camara Frontal: 16Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957554/smartphone/otros/nokiax30_uhdyn0.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477079/Phone/otros/nokiax30_jzv1so.webp",
     },
     {
         id: 25,
@@ -224,7 +224,7 @@ export const productsData = [
         marca: "Samsung",
         category: "samsung",
         specs: ["Memoria: 256Gb.", "Ram: 8Gb.", "Camara Principal: 80Mp.", "Camara Frontal: 12Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957544/smartphone/samsung/samsung_a54_graphite_front_1_aqmk1h.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477079/Phone/samsung/samsung_a54_icpq6s.webp",
     },
     {
         id: 26,
@@ -233,16 +233,16 @@ export const productsData = [
         marca: "Xiaomi",
         category: "xiaomi",
         specs: ["Memoria: 128Gb.", "Ram: 6Gb.", "Camara Principal: 48Mp.", "Camara Frontal: 8Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957554/smartphone/xiaomi/xiaomiPocoM3_mekwjo.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477079/Phone/xiaomi/xiaomiPocoM3_dncbbm.webp",
     },
     {
         id: 27,
-        name: "MOTO G32",
+        name: "MOTO E32",
         price: 125000,
         marca: "Motorola",
         category: "motorola",
         specs: ["Memoria: 128Gb.", "Ram: 4Gb.", "Camara Principal: 50Mp.", "Camara Frontal: 16Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957536/smartphone/motorola/motoe32-gris-frente_1_kgvcrb.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477080/Phone/motorola/motoe32_uyjkgd.webp",
     },
     {
         id: 28,
@@ -251,7 +251,7 @@ export const productsData = [
         marca: "Apple",
         category: "apple",
         specs: ["Memoria: 64Gb.", "Ram: 3Gb.", "Camara Principal: 12Mp.", "Camara Frontal: 7Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957555/smartphone/apple/iPhone_8_paiovh.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477081/Phone/apple/iPhone_8_qnbngp.webp",
     },
     {
         id: 29,
@@ -260,7 +260,7 @@ export const productsData = [
         marca: "Motorola",
         category: "motorola",
         specs: ["Memoria: 128Gb.", "Ram: 4Gb.", "Camara Principal: 50Mp.", "Camara Frontal: 16Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957535/smartphone/motorola/motoe20_kayc0e.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477080/Phone/motorola/motoe20_tnmwbp.webp",
     },
     {
         id: 30,
@@ -269,6 +269,6 @@ export const productsData = [
         marca: "Blackberry",
         category: "otros",
         specs: ["Memoria: 32Gb.", "Ram: 3Gb.", "Camara Principal: 12Mp.", "Camara Frontal: 8Mp."],
-        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1684957536/smartphone/otros/blackberry_zv9nfq.png",
+        img: "https://res.cloudinary.com/dv4ukplcm/image/upload/v1687477079/Phone/otros/blackberry_j8yqki.webp",
     },
 ]
