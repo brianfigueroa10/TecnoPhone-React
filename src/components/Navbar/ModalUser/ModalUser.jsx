@@ -3,12 +3,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Menu, Modal, ModalContent } from '../NavbarStyles';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { Button } from '../../UI/Button/Button';
-import { auth } from '../../../firebase/firebaseConfig';
-import { logoutUser } from '../../../redux/UserSlice';
+import { logoutUser } from '../../../redux/userSlice';
 
 const ModalUser = ({ handleToggleMenu, handleToggleCart }) => {
     const isCartOpen = useSelector(state => state.cart.isCartOpen);
-    const isLoggedIn = useSelector((state) => state.user.user?.displayName);
+    const isLoggedIn = useSelector((state) => state.user.user?.user?.username);
     const [menuOpen, setMenuOpen] = useState(false);
     const navigate = useNavigate()
     const dispatch = useDispatch()
@@ -24,13 +23,12 @@ const ModalUser = ({ handleToggleMenu, handleToggleCart }) => {
 
     const handleLogout = async () => {
         try {
-            await auth.signOut();
             dispatch(logoutUser());
             handleToggle();
             handleToggleMenu();
-            navigate('/')
+            navigate('/');
         } catch (error) {
-            console.log('Error al cerrar sesión:', error);
+            console.log(error);
         }
     };
 

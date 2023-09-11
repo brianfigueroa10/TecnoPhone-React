@@ -14,7 +14,7 @@ export const checkoutValidationSchema = Yup.object({
 });
 
 export const registerValidationSchema = Yup.object({
-  name: Yup.string().required('Nombre es requerido'),
+  username: Yup.string().required('Nombre es requerido'),
   email: Yup.string().email('Correo electrónico no válido').required('El correo electrónico es requerido'),
   password: Yup.string().required('Contraseña es requerida'),
 })

@@ -1,12 +1,13 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import recommendedReducer from './RecommendationSlice';
 import storage from 'redux-persist/lib/storage';
-import productsReducer from './productsSlice'
-import userReducer from './UserSlice'
+import productsReducer from './productsSlice';
+import userReducer from './userSlice';
 import { persistReducer } from 'redux-persist';
 import persistStore from 'redux-persist/es/persistStore';
-import categoriesReducer from './categoriesSlice'
-import cartReducer from './cartSlice'
+import categoriesReducer from './categoriesSlice';
+import cartReducer from './cartSlice';
+import orderReducer from './ordersSlice';
 
 const reducers = combineReducers({
     categories: categoriesReducer,
@@ -14,6 +15,7 @@ const reducers = combineReducers({
     recommended: recommendedReducer,
     cart: cartReducer,
     user: userReducer,
+    orders: orderReducer,
 })
 
 const persistConfig = {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { createOrder } from '../../firebase/firebaseOrders';
+
 import { clearCart } from '../../redux/cartSlice';
 import { useNavigate } from 'react-router-dom';
 import { ErrorMessage, Formik } from 'formik';
@@ -8,10 +8,12 @@ import { checkoutInitialValues } from '../../formik/initialValues';
 import { checkoutValidationSchema } from '../../formik/validationSchema';
 import { FieldForm, FormStyled } from '../../pages/Register/RegisterStyles';
 import { Button } from '../UI/Button/Button';
+import { createOrder } from '../../axios/axios-orders';
 
 const CheckoutForm = () => {
     const cartItems = useSelector((state) => state.cart.cartItems);
     const user = useSelector((state) => state.user.user);
+    const userID = useSelector((state) => state.user.user.user._id);
     const navigate = useNavigate()
 
     const total = cartItems.reduce(
@@ -21,26 +23,32 @@ const CheckoutForm = () => {
 
     const dispatch = useDispatch();
 
-    const handleSubmit = (values, { setSubmitting }) => {
+    const handleSubmit = async (values, { setSubmitting }) => {
         const orderData = {
-            cartItems: cartItems,
+            userId: userID,
+            items: cartItems,
             total: total,
-            details: {
+            shippingDetail: {
                 name: values.name,
                 cellphone: values.cellphone,
                 email: values.email,
                 address: values.address,
                 location: values.location,
                 province: values.province,
-            }
+            },
         }
-        // Create order and save to Firebase
-        createOrder(orderData, user);
+
+        try {
+            await createOrder(orderData, dispatch, user);
+            setSubmitting(false);
+        } catch (error) {
+            console.log(error);
+            
+        }
 
         // Clear cart
         dispatch(clearCart());
         navigate('/congratulation')
-        setSubmitting(false);
     };
 
     return (

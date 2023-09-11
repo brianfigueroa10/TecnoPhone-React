@@ -1,50 +1,60 @@
-import React, { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
-import { getOrders } from '../../firebase/firebaseOrders';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { CardContainer, DateAndTime, DateDescImg, DateDescPrice, DateDescQuantity, DateDescTitle, DateDescription, NoOrders, OrderId, OrderSection, PriceTotal, ProductDesc, ProductOrderContainer, ProductOrderDesc, ProductOrderTitle } from './OrdersStyles';
 import { SectionTitle } from '../../components/UI/SectionTitle/SectionTitle';
-import { formatPrice } from '../../utils/utils';
+import { formatDateAndTime, formatPrice } from '../../utils/utils';
+import { getOrders } from '../../axios/axios-orders';
+import { clearError, clearOrders, fetchOrdersFail, fetchOrdersStart } from '../../redux/ordersSlice';
 
 
 
 const Orders = () => {
-  const user = useSelector((state) => state.user.user);
-  const [orders, setOrders] = useState([]);
-
+  const dispatch = useDispatch();
+  const currentUser = useSelector((state) => state.user.user);
+  const ordersState = useSelector(state => state.orders.orders);
+  const orders = ordersState ? ordersState.data : null;
+  const error = ordersState ? ordersState.error : null;
 
   useEffect(() => {
-    const fetchOrders = async () => {
-      const userOrders = await getOrders(user);
-      setOrders(userOrders);
-    };
-
-    if (user) {
-      fetchOrders();
+    dispatch(fetchOrdersStart());
+    if (!currentUser) {
+      dispatch(clearOrders());
+      return;
     }
-  }, [user]);
+    if (!orders) {
+      getOrders(dispatch, currentUser);
+    }
+    if (!currentUser?.token) {
+      dispatch(fetchOrdersFail());
+    } else {
+      error && dispatch(clearError());
+    }
+  }, [dispatch, currentUser, orders, error]);
+
+  if (!orders || orders.length === 0) {
+    return (
+      <NoOrders>
+        <p>Aún no hay órdenes realizadas.</p>
+      </NoOrders>
+    );
+  }
 
   return (
     <OrderSection>
       <SectionTitle>Mis Ordenes</SectionTitle>
-      {orders.length === 0 ? (
-        <NoOrders>
-          <p>Aún No hay órdenes realizadas.</p>
-        </NoOrders>
-      ) : (
-        orders.map((order) => (
-
-          <CardContainer key={order.orderId}>
+        {orders.map((order) => (
+          <CardContainer key={order._id}>
 
             <DateDescription>
-              <OrderId>Número de Orden: {order.orderId}</OrderId>
-              <DateAndTime>Fecha: {order.timestamp} Hs.</DateAndTime>
+              <OrderId>Número de Orden: {order._id}</OrderId>
+              <DateAndTime>Fecha: {formatDateAndTime(order.createdAt)} Hs.</DateAndTime>
             </DateDescription>
 
             <ProductOrderContainer>
 
               <ProductOrderTitle>Producto</ProductOrderTitle>
 
-              {order.cartItems.map((item) => (
+              {order.items.map((item) => (
                 <ProductOrderDesc key={item.product.id}>
 
                   <ProductDesc>
@@ -61,7 +71,7 @@ const Orders = () => {
 
           </CardContainer>
         ))
-      )}
+      }
     </OrderSection>
   );
 };
