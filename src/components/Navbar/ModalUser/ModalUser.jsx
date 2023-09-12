@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Menu, Modal, ModalContent } from '../NavbarStyles';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { Button } from '../../UI/Button/Button';
-import { logoutUser } from '../../../redux/userSlice';
+import { logoutUser } from '../../../redux/userSlice.js';
 
 const ModalUser = ({ handleToggleMenu, handleToggleCart }) => {
     const isCartOpen = useSelector(state => state.cart.isCartOpen);
