@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { CiCircleMinus, CiCirclePlus, CiCircleRemove } from "react-icons/ci";
 
 export const ModalContainer = styled.div`
-  background: linear-gradient(95deg, #0A1716, #092429);
+  background: linear-gradient(95deg, #0a1716, #092429);
   position: absolute;
   top: 0;
   right: 0;
@@ -19,6 +19,9 @@ export const ModalContainer = styled.div`
 
   div {
     background: none;
+  }
+  @media screen and (max-width: 500px) {
+    width: 100%;
   }
 `;
 
@@ -53,19 +56,19 @@ export const CartContent = styled.div`
   }
 `;
 
-
-
-
 export const CartInfo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 15px;
   height: 130px;
-  border: 1px solid  #b2f2ff;
+  border: 1px solid #b2f2ff;
   border-radius: 10px;
   gap: 5px;
   background: #021e15;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 export const NoProducts = styled.p`
@@ -77,6 +80,9 @@ export const CartImage = styled.img`
   width: 60px;
   height: 110px;
   background: none;
+    @media screen and (max-width: 380px) {
+      display:none;
+  }
 `;
 export const CartSpecs = styled.div`
   display: flex;
@@ -93,7 +99,6 @@ export const CartSpecsInfo = styled.div`
   display: flex;
   flex-direction: column;
   background: none;
-
 `;
 
 export const CartNameItem = styled.h3`
@@ -101,6 +106,10 @@ export const CartNameItem = styled.h3`
   font-weight: 600;
   font-size: 18px;
   background: none;
+  @media screen and (max-width: 400px) {
+    font-size: 15px;
+    text-align: start;
+  }
 `;
 
 export const CartMarcaItem = styled.p`
@@ -110,24 +119,22 @@ export const CartMarcaItem = styled.p`
   background: none;
 `;
 
-
 export const CartPrice = styled.div`
   display: flex;
   flex-direction: column;
   background: none;
   align-items: flex-start;
   font-size: 13px;
-
   color: white;
-
-
 
   && span {
     color: #b2f2ff;
     font-size: 20px;
-  background: none;
-  font-weight: 600;
-
+    background: none;
+    font-weight: 600;
+    @media screen and (max-width: 400px) {
+      font-size: 16px;
+    }
   }
 `;
 
@@ -138,11 +145,11 @@ export const QuantityContainer = styled.div`
   justify-content: center;
   background: none;
   div {
-  background: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
   }
 `;
 
@@ -152,16 +159,14 @@ export const MinusIcon = styled(CiCircleMinus)`
   cursor: pointer;
   color: orange;
   background: none;
-
 `;
 
-export const PlusIcon = styled((CiCirclePlus))`
+export const PlusIcon = styled(CiCirclePlus)`
   color: white;
   font-size: 2rem;
   cursor: pointer;
   color: orange;
   background: none;
-
 `;
 
 export const CloseCart = styled(CiCircleRemove)`
@@ -177,7 +182,7 @@ export const Cost = styled.div`
   flex-direction: column;
   gap: 35px;
   align-items: center;
-    padding: 15px;
+  padding: 15px;
   padding-bottom: 25px;
   border-top: 2px solid white;
   justify-content: space-between;
@@ -209,7 +214,6 @@ export const ModalOverlayStyled = styled.div`
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-
 
   ${({ isHidden }) =>
     !isHidden &&
