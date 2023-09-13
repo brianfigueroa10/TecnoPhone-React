@@ -7,7 +7,7 @@ import { Button } from '../../components/UI/Button/Button';
 import { loginInitialValues } from '../../formik/initialValues';
 import { loginValidationSchema } from '../../formik/validationSchema';
 import { loginUser } from '../../axios/axios-users';
-import { currentUser } from '../../redux/userSlice.js';
+import { currentUser } from '../../redux/usersSlice';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {

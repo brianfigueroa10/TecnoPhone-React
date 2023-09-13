@@ -7,7 +7,7 @@ import { registerInitialValues } from '../../formik/initialValues';
 import { registerValidationSchema } from '../../formik/validationSchema';
 import { Button } from '../../components/UI/Button/Button';
 import { createUser } from '../../axios/axios-users';
-import { currentUser} from '../../redux/userSlice.js';
+import { currentUser} from '../../redux/usersSlice';
 import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
