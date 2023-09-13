@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { fade, slideFromBottom } from "../../styles/animations";
 
 export const BeneficiosContainer = styled.section`
   display: flex;
@@ -7,6 +8,7 @@ export const BeneficiosContainer = styled.section`
   gap: 25px;
   color: #a9b1b4;
   justify-content: center;
+      animation: ${fade} 1s ease-in, ${slideFromBottom} 1.3s ease-in-out;
     p {
     text-align: center;
   }

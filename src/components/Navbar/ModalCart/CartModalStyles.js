@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { CiCircleMinus, CiCirclePlus, CiCircleRemove } from "react-icons/ci";
+import { fade, slideFromRight } from "../../../styles/animations";
 
 export const ModalContainer = styled.div`
   background: linear-gradient(95deg, #0a1716, #092429);
@@ -16,6 +17,7 @@ export const ModalContainer = styled.div`
   gap: 5px;
   width: 450px;
   z-index: 999;
+  animation: ${fade} .5s ease-in, ${slideFromRight} .5s ease-in-out;
 
   div {
     background: none;
@@ -90,7 +92,7 @@ export const CartSpecs = styled.div`
   justify-content: space-evenly;
   width: 160px;
   height: 120px;
-  padding: 3px;
+  padding: 5px;
   background: none;
   align-items: flex-start;
 `;
@@ -123,9 +125,10 @@ export const CartPrice = styled.div`
   display: flex;
   flex-direction: column;
   background: none;
-  align-items: flex-start;
   font-size: 13px;
   color: white;
+  width: auto;
+  text-align: start;
 
   && span {
     color: #b2f2ff;

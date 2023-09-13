@@ -25,13 +25,7 @@ const CheckoutCard = () => {
                                 <CartMarcaItem>{item.product.marca}</CartMarcaItem>
                                 <CartNameItem>{item.product.name}</CartNameItem>
                             </CartSpecsInfo>
-                            <CheckoutCardSpecs>
-                                {item.product.specs.map((desc, ids) => (
-                                    <li key={ids}>{desc}</li>
-                                ))}
-
-                            </CheckoutCardSpecs>
-                            <CartPrice style={{color:'white', flexDirection:'row', alignItems:'center', gap:'20px'}}>Precio: <span>{formatPrice(item.product.price)}</span></CartPrice>
+                            <CartPrice>Precio: <span>{formatPrice(item.product.price)}</span></CartPrice>
                         </CartSpecs>
                         <QuantityContainer>
                             <motion.div whileTap={{ scale: 1.2 }}>

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Form as FormikForm, Field as FielFors } from "formik";
+import { fade, slideFromBottom } from "../../styles/animations";
 
 export const LoginContainerStyled = styled.div`
   display: flex;
@@ -10,6 +11,7 @@ export const LoginContainerStyled = styled.div`
   gap: 20px;
   padding: 50px;
   margin-top: 88px;
+  animation: ${fade} 1s ease-in, ${slideFromBottom} 0.5s ease-in-out;
 
   h1 {
     color: white;

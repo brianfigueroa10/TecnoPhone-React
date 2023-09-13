@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { fade, slideFromBottom } from "../../styles/animations";
 
 export const RecomendationContainer = styled.section`
   display: flex;
@@ -8,6 +9,7 @@ export const RecomendationContainer = styled.section`
   color: #a9b1b4;
   justify-content: center;
   padding: 55px 0;
+  animation: ${fade} 1s ease-in, ${slideFromBottom} 1.3s ease-in-out;
 `;
 
 export const TopContainer = styled.div`
@@ -94,11 +96,11 @@ export const SpecsDescription = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
   list-style-type: none;
   align-items: flex-start;
   justify-content: center;
-  /*padding-left: 15px;*/
-  gap: 2px;
 
   && li {
     text-decoration: none;

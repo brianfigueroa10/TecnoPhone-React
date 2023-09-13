@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { fade, slideFromBottom } from "../../styles/animations";
 
 export const CongratsWrapper = styled.div`
     display: flex;
@@ -11,6 +12,7 @@ export const CongratsWrapper = styled.div`
     gap: 30px;
     z-index: 5;
     background: none;
+        animation: ${fade} 1s ease-in, ${slideFromBottom} 1.3s ease-in-out;
 `;
 
 export const CongratsDiv = styled(CongratsWrapper)`

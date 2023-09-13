@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { fade, slideFromBottom } from "../../styles/animations";
 
 export const ContactSectionStyled = styled.section`
   color: white;
@@ -9,6 +10,7 @@ export const ContactSectionStyled = styled.section`
   margin-top: 130px;
   align-items: center;
   padding: 50px;
+  animation: ${fade} 1s ease-in, ${slideFromBottom} 0.5s ease-in-out;
 
   @media screen and (max-width: 920px) {
     display: flex;

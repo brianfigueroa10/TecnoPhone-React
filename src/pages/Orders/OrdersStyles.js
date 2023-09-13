@@ -1,11 +1,13 @@
 import styled from "styled-components";
 import { SectionTitle } from "../../components/UI/SectionTitle/SectionTitle";
+import { fade, slideFromBottom } from "../../styles/animations";
 export const OrderSection = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  animation: ${fade} 1s ease-in, ${slideFromBottom} 1.3s ease-in-out;
 
   h2 {
     color: white;

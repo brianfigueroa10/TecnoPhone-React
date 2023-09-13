@@ -1,10 +1,14 @@
 import { styled } from "styled-components";
+import { fade, slideFromBottom } from "../../styles/animations";
+
 
 export const HeroContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 35px 65px;
+  animation: ${fade} 1s ease-in, ${slideFromBottom} 1.3s ease-in-out;
+
 
   @media screen and (max-width: 920px) {
     display: flex;
@@ -19,8 +23,8 @@ export const HeroContainer = styled.section`
 `;
 
 export const TitlePrimary = styled.h1`
-  font-weight: 900;
   font-size: 3.7rem;
+  font-weight: 800;
   width: 70%;
   background: linear-gradient(130deg, #00fca8, #1cdaff);
   -webkit-background-clip: text;

@@ -40,8 +40,8 @@ const Recomendation = () => {
                 ))}
 
               </SpecsDescription>
-              <SpecsDescription>
-                <SpecsPrice>Precio: <span>${price}</span></SpecsPrice>
+              <SpecsDescription style={{ gap: '5px' }}>
+                <SpecsPrice >Precio: <span>${price}</span></SpecsPrice>
                 <Button onClick={() => dispatch(addToCart({ id, img, name, marca, specs, price }))}>Agregar</Button>
               </SpecsDescription>
 

@@ -53,7 +53,7 @@ const Navbar = () => {
 
           {/* Icono del carrito */}
           <CartContainer onClick={handleToggleCart}>
-            <FaShoppingCart />
+            <FaShoppingCart style={{background: '#222'}} />
             <span>{totalCartItemsQuantity}</span>
           </CartContainer>
 
@@ -62,7 +62,7 @@ const Navbar = () => {
           <LinkContainer open={isMenuOpen}>
             <li>
               <div>
-                <NavLink to="/" style={{ fontWeight: "800" }} onClick={handleToggleMenu}>Home</NavLink>
+                <NavLink to="/" style={{ fontWeight: "800"}} onClick={handleToggleMenu}>Home</NavLink>
 
               </div>
             </li>

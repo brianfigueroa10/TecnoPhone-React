@@ -19,6 +19,8 @@ export const NavegationNavbar = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 50px;
+  background: #222;
+
 `;
 
 export const LinkContainer = styled.ul`
@@ -28,6 +30,9 @@ export const LinkContainer = styled.ul`
   margin: 0;
   padding: 0;
   gap: 20px;
+  background: #222;
+
+
 
   && a {
     color: white;
@@ -35,6 +40,8 @@ export const LinkContainer = styled.ul`
     display: flex;
     align-items: center;
     cursor: pointer;
+  background: #222;
+    
   }
 
   && a:hover {
@@ -115,15 +122,21 @@ export const ModalContent = styled.div`
 
 export const Menu = styled.div`
 position: relative;
-background: none;
+background: #222
 `;
 export const CartContainer = styled.div`
 cursor: pointer;
   font-size: 1.2rem;
   color: orange;
+  background: #222;
+
   @media (max-width: 768px) {
   right: 75px ;
   position: absolute;
   font-size: 1.3rem;
+  }
+  span {
+  background: #222;
+  
   }
 `;

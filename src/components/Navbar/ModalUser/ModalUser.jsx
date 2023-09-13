@@ -55,13 +55,13 @@ const ModalUser = ({ handleToggleMenu, handleToggleCart }) => {
                 <Modal>
                     {isLoggedIn ? (
                         <ModalContent>
-                            <NavLink to="/misOrdenes" onClick={() => {
+                            <NavLink style={{ background: '#454545'}} to="/misOrdenes" onClick={() => {
                                 handleToggle();
                                 handleToggleMenu();
                             }}>
                                 Ver Mis Ordenes
                             </NavLink>
-                            <NavLink
+                            <NavLink style={{ background: '#454545' }}
                                 onClick={() => {
                                     handleLogout();
                                     handleToggle();
@@ -73,13 +73,13 @@ const ModalUser = ({ handleToggleMenu, handleToggleCart }) => {
                         </ModalContent>
                     ) : (
                         <ModalContent>
-                            <NavLink to="/login" onClick={() => {
+                                <NavLink to="/login" style={{ background: '#454545' }} onClick={() => {
                                 handleToggle();
                                 handleToggleMenu();
                             }}>
                                 Inicia Sesión
                                 </NavLink>
-                                <NavLink to="/register" onClick={() => {
+                                <NavLink to="/register" style={{ background: '#454545' }} onClick={() => {
                                     handleToggle();
                                     handleToggleMenu();
                                 }}>

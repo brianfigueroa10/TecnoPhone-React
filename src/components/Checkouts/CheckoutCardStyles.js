@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { CartContent } from "../Navbar/ModalCart/CartModalStyles";
 
 export const CheckoutContainer = styled(CartContent)`
-
+display: flex;
 `;
 
 
@@ -36,8 +36,8 @@ export const CheckoutCardInfo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
-  height: 200px;
+  padding: 10px;
+  height: 600px;
   width: 400px;
   border: 1px solid  #b2f2ff;
   border-radius: 10px;
@@ -55,11 +55,10 @@ export const CheckoutCardInfo = styled.div`
 export const CheckoutCardSpecs = styled.div`
   display: flex;
   flex-direction: column;
-  font-size: 11px;
+  font-size: 5px;
   list-style-type: none;
   align-items: flex-start;
   justify-content: center;
-  gap: 2px;
   background: none;
   color: white;
   li {
