@@ -7,7 +7,7 @@ const FooterContainer = styled.footer`
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  background: #222;
+
   gap: 25px;
 `;
 

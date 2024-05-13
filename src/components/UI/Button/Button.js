@@ -12,8 +12,8 @@ export const ButtonLinks = styled(Link)`
   font-weight: ${({ first }) => (first ? "700" : "600")};
   text-decoration: none;
   text-align: center;
-  background-color: ${({ first }) => (first ? "#454545" : "none")};
-  background-color: ${({ prods }) => (prods ? "orange" : "none")};
+  background: ${({ first }) => (first ? "#1cdaff" : "none")};
+  background: ${({ prods }) => (prods ? "orange" : "none")};
 
   &&:hover {
     background-color: #1B9DB6;
@@ -35,8 +35,8 @@ export const Button = styled.button`
   background: none;
 
   &&:first-child {
-    background: #454545;
-    border: 2px solid #454545;
+   background: linear-gradient(130deg, #00fca8, #1cdaff);
+    border: 2px solid;
     text-align: center;
   }
   &&:hover {

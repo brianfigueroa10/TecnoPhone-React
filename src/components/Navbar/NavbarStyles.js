@@ -5,13 +5,14 @@ export const NavContainer = styled.nav`
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #222;
+ background: transparent;
   padding: 10px 25px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 25px 6px rgba(0, 0, 0, 0.1);
   z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  backdrop-filter: blur(15px);
 `;
 
 export const NavegationNavbar = styled.div`
@@ -19,7 +20,9 @@ export const NavegationNavbar = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  background: #222;
+  background: transparent;
+
+
 
 `;
 
@@ -30,7 +33,8 @@ export const LinkContainer = styled.ul`
   margin: 0;
   padding: 0;
   gap: 20px;
-  background: #222;
+  background: transparent;
+
 
 
 
@@ -40,7 +44,9 @@ export const LinkContainer = styled.ul`
     display: flex;
     align-items: center;
     cursor: pointer;
-  background: #222;
+    background: transparent;
+    
+
     
   }
 
@@ -57,7 +63,9 @@ export const LinkContainer = styled.ul`
     justify-content: flex-start;
     align-items: center;
     transition: all 0.3s ease-in-out;
-    background-color: #333;
+
+  background-color: rgba(0, 12, 0, 1);
+  opacity: 0.9;
     z-index: 10;
     padding: 100px 0;
 
@@ -99,7 +107,7 @@ export const Modal = styled.div`
   width: 100%;
   border: 1px solid black;
   margin-top: 5px;
-  background: #454545;
+  background: #000;
   border-radius: 10px;
   min-width: 130px;
   justify-content: end;
@@ -122,21 +130,23 @@ export const ModalContent = styled.div`
 
 export const Menu = styled.div`
 position: relative;
-background: #222
+background: none;
 `;
 export const CartContainer = styled.div`
 cursor: pointer;
   font-size: 1.2rem;
   color: orange;
-  background: #222;
+  background: none;
+
+  && span {
+    background: none;
+  }
+
 
   @media (max-width: 768px) {
   right: 75px ;
   position: absolute;
   font-size: 1.3rem;
   }
-  span {
-  background: #222;
-  
-  }
+
 `;

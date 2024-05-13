@@ -26,6 +26,7 @@ export const TitlePrimary = styled.h1`
   font-size: 3.7rem;
   font-weight: 800;
   width: 70%;
+text-wrap: balance;
   background: linear-gradient(130deg, #00fca8, #1cdaff);
   -webkit-background-clip: text;
   color: transparent;
@@ -43,6 +44,7 @@ export const TitlePrimary = styled.h1`
 `;
 
 export const Presentation = styled.p`
+text-wrap: balance;
   font-weight: 600;
   width: 80%;
   color: #9c9ca0;

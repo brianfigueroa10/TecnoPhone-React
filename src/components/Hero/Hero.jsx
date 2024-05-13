@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <HeroContainer>
       <HeroDescription>
-        <TitlePrimary>Somos tecnología a tu alcance!</TitlePrimary>
+        <TitlePrimary>Calidad, Estilo y Tecnología</TitlePrimary>
         <Presentation>
           En TecnoPhone, vas a encontrar la mejor variedad de smartphones de última generación, desde gamas básicas hasta las más avanzadas. Además, nuestro amplio stock asegura una entrega rápida. ¡Descubri la excelencia tecnológica en TecnoPhone y eligi el smartphone ideal para vos!.
         </Presentation>
@@ -15,7 +15,7 @@ const Hero = () => {
           <ButtonLinks to='/contact'>Contactanos</ButtonLinks>
         </HeroLinks>
       </HeroDescription>
-      <HeroImg src="https://images.pexels.com/photos/1298974/pexels-photo-1298974.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hero" />
+      <HeroImg src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="Hero" />
     </HeroContainer>
   )
 }

@@ -34,7 +34,7 @@ const Navbar = () => {
   };
 
   return (
-    <>
+  
       <NavContainer>
         
 
@@ -53,38 +53,38 @@ const Navbar = () => {
 
           {/* Icono del carrito */}
           <CartContainer onClick={handleToggleCart}>
-            <FaShoppingCart style={{background: '#222'}} />
+            <FaShoppingCart style={{background: 'transparent'}} />
             <span>{totalCartItemsQuantity}</span>
           </CartContainer>
 
 
           {/* Navegación */}
           <LinkContainer open={isMenuOpen}>
-            <li>
-              <div>
+            <li style={{background: 'transparent'}} >
+          
                 <NavLink to="/" style={{ fontWeight: "800"}} onClick={handleToggleMenu}>Home</NavLink>
 
-              </div>
+          
             </li>
-            <li>
-              <div>
+          <li style={{ background: 'transparent' }}>
+        
                 <NavLink to="/products" onClick={handleToggleMenu}>Productos</NavLink>
 
-              </div>
+             
 
             </li>
-            <li>
-              <div>
+          <li style={{ background: 'transparent' }}>
+              
                 <NavLink to="/contact" onClick={handleToggleMenu}>Contacto</NavLink>
 
-              </div>
+            
 
             </li>
-            <li>
-              <div>
+          <li style={{ background: 'transparent' }}>
+           
                 <ModalUser handleToggleMenu={handleToggleMenu} handleToggleCart={handleToggleCart} isCartOpen={isCartOpen} />
 
-              </div>
+       
 
             </li>
 
@@ -92,7 +92,7 @@ const Navbar = () => {
           <CartModal isCartOpen={isCartOpen} handleClose={handleToggleCart}/>
         </NavegationNavbar>
       </NavContainer>
-    </>
+
   );
 };
 

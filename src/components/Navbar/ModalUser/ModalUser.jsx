@@ -48,20 +48,20 @@ const ModalUser = ({ handleToggleMenu, handleToggleCart }) => {
 
     return (
         <Menu ref={menuRef}>
-            <Button onClick={handleToggle} style={{ minWidth: '155px' }} >
+            <Button onClick={handleToggle} style={{ minWidth: '155px'}} >
                 {isLoggedIn ? `${isLoggedIn}` : 'Tu Cuenta'}
             </Button>
             {menuOpen && (
                 <Modal>
                     {isLoggedIn ? (
                         <ModalContent>
-                            <NavLink style={{ background: '#454545'}} to="/misOrdenes" onClick={() => {
+                            <NavLink style={{ background: 'transparent'}} to="/misOrdenes" onClick={() => {
                                 handleToggle();
                                 handleToggleMenu();
                             }}>
                                 Ver Mis Ordenes
                             </NavLink>
-                            <NavLink style={{ background: '#454545' }}
+                            <NavLink style={{ background: '' }}
                                 onClick={() => {
                                     handleLogout();
                                     handleToggle();
@@ -73,13 +73,13 @@ const ModalUser = ({ handleToggleMenu, handleToggleCart }) => {
                         </ModalContent>
                     ) : (
                         <ModalContent>
-                                <NavLink to="/login" style={{ background: '#454545' }} onClick={() => {
+                                <NavLink to="/login" style={{ background: '' }} onClick={() => {
                                 handleToggle();
                                 handleToggleMenu();
                             }}>
                                 Inicia Sesión
                                 </NavLink>
-                                <NavLink to="/register" style={{ background: '#454545' }} onClick={() => {
+                                <NavLink to="/register" style={{ background: '' }} onClick={() => {
                                     handleToggle();
                                     handleToggleMenu();
                                 }}>
