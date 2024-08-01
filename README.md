@@ -4,7 +4,7 @@ TecnoPhone es una aplicación web para la venta de celulares, construida con Rea
 
 ## Descripción
 
-TecnoPhone permite a los usuarios explorar una variedad de teléfonos móviles, añadirlos al carrito de compras y realizar compras. La aplicación se conecta a la API [TecnoApi](https://tecno-api.vercel.app/) para obtener datos actualizados sobre los productos y manejar las órdenes.
+TecnoPhone permite a los usuarios explorar una variedad de teléfonos móviles, añadirlos al carrito de compras y realizar compras. La aplicación se conecta a la API [TecnoApi](https://github.com/brianfigueroa10/tecnoAPI) para obtener datos actualizados sobre los productos y manejar las órdenes.
 
 ## Características
 
